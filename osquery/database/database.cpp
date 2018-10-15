@@ -26,9 +26,9 @@ CLI_FLAG(string,
          "If using a disk-based backing store, specify a path");
 FLAG_ALIAS(std::string, db_path, database_path);
 
-FLAG(bool, disable_database, false, "Disable the persistent RocksDB storage");
+FLAG(bool, disable_database, false, "Disable the persistent SQLite storage");
 
-const std::string kInternalDatabase = "rocksdb";
+const std::string kInternalDatabase = "sqlite";
 const std::string kPersistentSettings = "configurations";
 const std::string kQueries = "queries";
 const std::string kEvents = "events";
